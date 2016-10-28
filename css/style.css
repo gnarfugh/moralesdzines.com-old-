@@ -1,0 +1,520 @@
+body, h1,h2,h3,h4, p, a{
+	overflow-x:hidden;
+	font-family: 'Roboto', sans serif;
+	outline:0;
+}
+
+h2{
+	font-size:40px;
+	overflow-y:hidden;
+
+}
+
+h3{
+	overflow-y:hidden;
+}
+
+a:visited {
+	color:#fff;
+}
+
+a:focus {
+	outline:0;
+}
+
+
+header {
+	color:#fff;
+    background-attachment: scroll;
+    background-image: url(../img/bg.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    overflow:hidden;
+    height:635px;
+}
+
+.jumbotron {
+	text-decoration:none;
+	background-color: transparent;
+}
+
+.hero {
+	display:block;
+	margin: 40px auto 20px;
+	width: 240px;
+	border: 5px solid rgba(255, 255, 255, .25);
+	border-radius:300px;
+}
+
+.container {
+	width:100%;
+}
+
+.container-fluid h1{
+	text-align:center;
+	overflow:hidden;
+}
+
+.container-fluid p {
+	text-align:center;
+}
+
+.navbar-default {
+	background: rgba(72,73,74,.6); 
+	border: 1px solid black 0.1;
+	color:#fff;
+}
+
+.navbar-default .navbar-brand {
+	color:#fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color:#fff;
+}
+
+/**************************************************************
+About
+**************************************************************/
+
+#about {
+	background-color:#fff;
+	text-align:center;
+	margin: 0 auto;
+	padding:20px;
+	border: 1px solid black 0.1;
+	color: #48494a
+}
+
+.circle-round {
+	margin-top:2rem;
+
+}
+
+.circle-round h2 {
+	margin:30px 0;
+}
+
+.circle-round h4 {
+	text-align: center;
+	display:inline;
+}
+
+.circle-round p {
+	line-height:1.8;
+	display:inline;
+	margin-bottom:30px;
+	text-align:left;
+}
+
+.circle-round .curve {
+	width: 33%; 
+	height: auto;
+  	min-width: 150px;
+  	float: left;
+  	margin-right:2rem; 
+  	border-radius: 50%;
+  	-webkit-shape-outside:circle();
+  	shape-outside:circle();
+}
+
+blockquote {
+	font-weight:400px;
+	font-style:italic;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    border:0;
+    padding:0px;
+}
+blockquote:before, blockquote:after {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    font-size: 40px;
+    line-height: 1;
+}
+blockquote:before {
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+blockquote:after {
+    top: 0;
+    right: 0;
+    content: "\201D";
+}
+
+.circle-round footer {
+	text-align:center;
+	padding-bottom:30px;
+}
+
+.circle-round cite {
+	text-align:right;
+    position: relative;
+    font-size: 20px; 
+    padding-bottom:40px;
+}
+
+.icons {
+	margin:20px auto;
+	padding-top:40px;
+	display:block;
+}
+
+/**portfolio**/
+
+#work {
+	background-color:#6a6967;
+	text-align:center;
+	padding:20px;
+}
+
+#work h2 {
+	color:#fff;
+	margin-top:20px;
+}
+
+/**************************************************************
+grid
+**************************************************************/
+
+.grid {
+  padding: 20px 20px 100px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+.grid li {
+  display: inline-block;
+  width: 440px;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.grid figure {
+  margin: 0;
+  position: relative;
+}
+
+.grid figure img {
+  max-width: 100%;
+  display: block-inline;
+  position: relative;
+}
+
+.grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background: #48494a;
+  color: #fff;
+}
+
+.grid figcaption h3 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.grid figcaption span:before {
+  content: '</> ';
+}
+
+.grid figcaption a {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #fff;
+  color: #48494a;
+  text-decoration:none;
+}
+/**************************************************************
+effect
+**************************************************************/
+
+.animate figure {
+  overflow: hidden;
+}
+
+.animate figure img {
+  transition: transform 0.4s;
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+}
+
+.no-touch .animate figure:hover img,
+.cs-style figure.cs-hover img {
+  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+  -moz-transition: translateY(-50px);
+  -ms-transform: translateY(-50px);
+}
+
+.animate figcaption {
+  height: 100px;
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  opacity: 0;
+  transition: transform 0.4s, opacity 0.1s 0.1s;
+  -webkit-transform: -webkit-transform 0.4s, opacity 0.1s 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.1s;
+}
+
+.no-touch .animate figure:hover figcaption,
+.animate figure.cs-hover figcaption {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transition: translateY(0px);
+  -ms-transform: translateY(0px);
+  transition: transform 0.4s, opacity: 0.1s;
+  -webkit-transform: -webkit-transform 0.4s, opacity: 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity: 0.1s;
+}
+
+.animate figcaption a {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+/**************************************************************
+modal
+**************************************************************/
+
+ .btn {
+	background-color:transparent;
+	float:right;
+}
+
+.modal p {
+  padding: 10px 10px 0 10px;
+}
+
+.modal img {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.modal-header {
+	border:0;
+}
+
+.modal-header span {
+	font-size:24px;
+}
+.modal-body {
+	margin-bottom:0;
+	padding-bottom:0;
+}
+
+.modal-footer {
+  background: #48494a;
+  color: #fff;
+  text-align:center;
+  margin:0 auto;
+  padding:5px;
+}
+
+.modal-footer h3 {
+	margin:0 auto;
+}
+
+.modal-footer a {
+	text-align: center;
+  padding: 5px 10px;
+  margin:5px;
+  border-radius: 2px;
+  display: inline;
+  background: #fff;
+  color: #48494a;
+  text-decoration:none;
+  float:right;
+}
+
+.modal-footer span {
+	display:block;
+}
+
+/**************************************************************
+contact
+**************************************************************/
+#contact {
+	text-align:center;
+	color: #48494a;
+	padding-top:20px;
+}
+
+.contact-list {
+	text-decoration: none;
+	color:#000;
+}
+
+.contact-list ul{
+	padding-left:0;
+	min-width:100%;
+}
+
+.contact-list li {
+	display:inline-block;
+	text-align: center;
+	padding: 5px;
+}
+
+.contact-list li a{
+	color: #48494a
+}
+
+/** @media **************************************
+************************************************/
+@media screen and (min-width:960px){
+.circle-round .curve { 
+	height: auto;
+  	min-width: 150px;
+  	float:none;
+  	margin: 0 auto; 
+  	border-radius: 50%;
+  	-webkit-shape-outside:circle();
+  	shape-outside:circle();
+}
+}
+
+
+/* Landscape phone to portrait tablet */
+@media screen and (max-width: 769px) { 
+#about h2{
+	margin-top:40px;
+}
+#work h2 {
+	margin-top:40px;
+}
+
+.circle-round {
+	text-align:center;
+}
+
+.circle-round .curve {
+	width: 33%; 
+	height: auto;
+  	min-width: 150px;
+  	float:none;
+  	margin: 0 auto; 
+  	border-radius: 50%;
+  	-webkit-shape-outside:circle();
+  	shape-outside:circle();
+}
+ }
+
+/* Landscape phones and down */
+@media screen and (max-width: 480px) { 
+
+
+.circle-round {
+	text-align:center;
+}
+
+.circle-round .curve {
+	width: 33%; 
+	height: auto;
+  	min-width: 150px;
+  	float:none;
+  	margin: 0 auto; 
+  	border-radius: 50%;
+  	-webkit-shape-outside:circle();
+  	shape-outside:circle();
+}
+
+#about h2{
+	margin-top:40px;
+}
+#work h2 {
+	margin-top:40px;
+}
+
+blockquote {
+	display:inline-block;
+	padding:0;
+	font-size:1.2em;
+}
+.grid {
+		text-align:center;
+		padding: 10px 10px 100px 10px;
+	}
+	.grid li {
+		width: 100%;
+		margin:0 auto ;
+	}
+	.grid figcaption{
+		padding:10px;
+		text-align:center;
+	}
+	.grid figcaption h3 {
+		font-size: .8em;
+		margin:0;
+		padding:0;
+	}
+	.grid figcaption span {
+		font-size:.5em;
+		text-align:left;
+		margin:0;
+		padding:0;
+	}
+	.grid figcaption a {
+		margin:0 auto;
+		text-align:center;
+		font-size:.6;
+		padding:5px;
+	}
+
+	.animate figcaption a {
+		margin:30px;
+		position:static;
+		font-size:.7em;
+		padding:5px;
+	}
+
+	.modal-footer h3{
+		font-size:1.6em;
+		padding-top:5px;
+	}
+	.modal-footer span {
+		font-size: 1em;
+		padding:5px;
+	}
+
+	.modal-footer a {
+		margin:5px
+	}
+	.contact-list{
+		padding-left:0;
+		padding-right:0;
+	}
+}
+
+/**************************************************************
+clearfix hack
+**************************************************************/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
